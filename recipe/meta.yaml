@@ -10,7 +10,7 @@ source:
   sha256: 7ff57d4d11d8e7a91114acb4506326226ae4ed1954e90d68aeb88b33c35c5b71
 
 build:
-  number: 0
+  number: 1
   script:
     - cd cmd/jsonnetfmt && go-licenses save . --save_path ../../library_licenses
     - go build -v -o $PREFIX/bin/jsonnetfmt  # [not win]
