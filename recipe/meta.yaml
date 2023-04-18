@@ -1,5 +1,5 @@
 {% set name = "jsonnetfmt" %}
-{% set version = "0.19.1" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/google/go-jsonnet/archive/v{{ version }}.tar.gz
-  sha256: 7ff57d4d11d8e7a91114acb4506326226ae4ed1954e90d68aeb88b33c35c5b71
+  sha256: bf9923a848dba65fa99f6e926221ab4222c2f259ba837d279b43917962bc7d70
 
 build:
-  number: 1
+  number: 0
   script:
     - cd cmd/jsonnetfmt && go-licenses save . --save_path ../../library_licenses
     - go build -v -o $PREFIX/bin/jsonnetfmt  # [not win]
