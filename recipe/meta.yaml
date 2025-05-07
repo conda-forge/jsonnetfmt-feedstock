@@ -1,5 +1,5 @@
 {% set name = "jsonnetfmt" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/google/go-jsonnet/archive/v{{ version }}.tar.gz
-  sha256: bf9923a848dba65fa99f6e926221ab4222c2f259ba837d279b43917962bc7d70
+  sha256: ee7aa004e78fb49608bcf28142a7494dc204a07cc07d323dd2cff3d97298c696
 
 build:
   number: 0
